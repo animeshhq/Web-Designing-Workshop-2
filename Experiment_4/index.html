@@ -1,21 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>STUDENT RESULT CALCULATOR</h2>
-    <label>Enter number of subjects</label><br> <br>
-    <input type="number" id="subjects"><br> <br>
-    <button onclick='calculateMarks()'>Calculate</button><br> <br>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Result Calculator</title>
 
-    <div id="total"></div>
-    <div id="average"></div>
-    <div id="grade"></div>
-    <div id="result"></div>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f6f8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
 
-    <script src="main.js"></script>
-</body>
+            .card {
+                background: white;
+                padding: 25px 30px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 300px;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            input {
+                width: 80%;
+                padding: 8px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                outline: none;
+            }
+
+            button {
+                padding: 8px 16px;
+                border: none;
+                border-radius: 6px;
+                background-color: #4a90e2;
+                color: white;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #357abd;
+            }
+
+            div {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="card">
+            <h2>STUDENT RESULT CALCULATOR</h2>
+
+            <label>Enter number of subjects</label><br /><br />
+            <input type="number" id="subjects" /><br /><br />
+
+            <button onclick="calculateMarks()">Calculate</button><br /><br />
+
+            <div id="total"></div>
+            <div id="average"></div>
+            <div id="grade"></div>
+            <div id="result"></div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
 </html>
