@@ -73,6 +73,11 @@
                 function handleSubmit(event) {
                     event.preventDefault();
 
+                    if (email === "" || password === "") {
+                        alert("Email and Password are required");
+                        return;
+                    }
+
                     console.log(name);
                     console.log(email);
                     console.log(password);
