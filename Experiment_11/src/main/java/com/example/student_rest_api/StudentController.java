@@ -12,7 +12,7 @@ public class StudentController {
 
     @GetMapping("/student")
     public Student getStudent() {
-        return new Student(101, "Rohit Gupta", "Computer Science");
+        return new Student(101, "Animesh Gautam", "Computer Science");
     }
 
     @PostMapping("/student")
