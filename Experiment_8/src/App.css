@@ -1,36 +1,29 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6fb;
-}
-
-.container {
-    text-align: center;
-    padding: 30px;
-}
-
-.card-container {
+.app {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-top: 20px;
+    min-height: 100vh;
+    background: #f4f4f4;
 }
 
 .card {
-    width: 300px;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
-.card h2 {
-    margin: 0;
-    color: #1e73e8;
+.buttons {
+    margin-top: 16px;
 }
 
-.card p {
-    margin: 5px 0;
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 0 6px;
+    border-radius: 6px;
+    cursor: pointer;
 }

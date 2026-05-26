@@ -1,24 +1,18 @@
+import React, { useState } from "react";
 import "./App.css";
 
-function Student(props) {
-  return (
-    <div className="card">
-      <h2>{props.name}</h2>
-      <p>Course: {props.course}</p>
-      <p>Marks: {props.marks}</p>
-    </div>
-  );
-}
-
 function App() {
-  return (
-    <div className="container">
-      <h1>Student Details</h1>
+  const [count, setCount] = useState(0);
 
-      <div className="card-container">
-        <Student name="Animesh" course="BCA" marks={85} />
-        <Student name="Rahul" course="BTech" marks={78} />
-        <Student name="Priya" course="BSc" marks={92} />
+  return (
+    <div className="app">
+      <div className="card">
+        <h1>Counter: {count}</h1>
+        <div className="buttons">
+          <button onClick={() => setCount(count + 1)}>Increment</button>
+          <button onClick={() => setCount(count - 1)}>Decrement</button>
+          <button onClick={() => setCount(0)}>Reset</button>
+        </div>
       </div>
     </div>
   );
